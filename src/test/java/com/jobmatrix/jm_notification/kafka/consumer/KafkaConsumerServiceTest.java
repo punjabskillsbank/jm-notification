@@ -1,7 +1,8 @@
-package com.jobmatrix.jm_notification.serviceImpl;
+package com.jobmatrix.jm_notification.kafka.consumer;
 
 import com.common.entity.User;
 import com.common.event.ProposalSubmittedEvent;
+import com.jobmatrix.jm_notification.email.SesEmailSender;
 import com.jobmatrix.jm_notification.repository.UserAccountRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -37,7 +38,7 @@ class KafkaConsumerServiceTest {
         UUID clientId = UUID.randomUUID();
         ProposalSubmittedEvent event = ProposalSubmittedEvent.builder()
                 .proposalId(1L)
-                .jobPostingId(101)
+                .jobPostingId(101L)
                 .clientId(clientId)
                 .freelancerId(UUID.randomUUID())
                 .build();
@@ -66,7 +67,7 @@ class KafkaConsumerServiceTest {
         UUID clientId = UUID.randomUUID();
         ProposalSubmittedEvent event = ProposalSubmittedEvent.builder()
                 .proposalId(1L)
-                .jobPostingId(101)
+                .jobPostingId(101L)
                 .clientId(clientId)
                 .freelancerId(UUID.randomUUID())
                 .build();
@@ -85,7 +86,7 @@ class KafkaConsumerServiceTest {
         UUID clientId = UUID.randomUUID();
         ProposalSubmittedEvent event = ProposalSubmittedEvent.builder()
                 .proposalId(1L)
-                .jobPostingId(101)
+                .jobPostingId(101L)
                 .clientId(clientId)
                 .freelancerId(UUID.randomUUID())
                 .build();

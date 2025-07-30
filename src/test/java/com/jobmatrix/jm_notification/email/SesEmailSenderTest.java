@@ -1,4 +1,4 @@
-package com.jobmatrix.jm_notification.serviceImpl;
+package com.jobmatrix.jm_notification.email;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

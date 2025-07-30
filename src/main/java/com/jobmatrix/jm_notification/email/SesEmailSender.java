@@ -1,4 +1,4 @@
-package com.jobmatrix.jm_notification.serviceImpl;
+package com.jobmatrix.jm_notification.email;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;

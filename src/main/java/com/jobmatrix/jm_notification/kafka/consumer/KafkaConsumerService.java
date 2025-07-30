@@ -1,9 +1,10 @@
-package com.jobmatrix.jm_notification.serviceImpl;
+package com.jobmatrix.jm_notification.kafka.consumer;
 
 import com.common.entity.User;
 import com.common.event.ProposalSubmittedEvent;
 import com.common.exceptionHandling.UserNotFoundException;
 import com.jobmatrix.jm_notification.repository.UserAccountRepository;
+import com.jobmatrix.jm_notification.email.SesEmailSender;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
